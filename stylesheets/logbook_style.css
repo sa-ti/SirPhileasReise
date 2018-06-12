@@ -1,0 +1,57 @@
+#centeredLogbook {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 1000px;
+}
+
+IMG.displayed {
+    display: inline-block;
+    margin-top: 15%;
+}
+
+ul{
+    margin-top: 15%;
+}
+
+#flipbook{
+    width:400px;
+    height:300px;
+    position: absolute;
+    top: 100px;
+}
+
+#flipbook .page{
+    width:400px;
+    height:300px;
+    font-size:20px;
+    text-align:center;
+}
+
+#flipbook .page-wrapper{
+    -webkit-perspective:2000px;
+    -moz-perspective:2000px;
+    -ms-perspective:2000px;
+    -o-perspective:2000px;
+    perspective:2000px;
+}
+
+#flipbook .hard{
+    background-image: url("../images/Logbook_Cover2.png")!important;
+    background-size: cover;
+}
+
+#flipbook .text{
+    width:400px;
+    height:400px;
+    line-height:50px;
+    font-size:20px;
+}
+
+#flipbook .odd{
+    background-image: url("../images/SeiteRechts.png");
+}
+
+#flipbook .even{
+    background-image: url("../images/SeiteLinks.png");
+}

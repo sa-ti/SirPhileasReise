@@ -1,0 +1,36 @@
+#draggableright{
+    float: left;
+    left: 200px;
+    width: 250px;
+    height: 100px;
+    z-index: 2;
+}
+#draggablefalse, #draggablefalse2{
+    float: right;
+    width: 250px;
+    height: 100px;
+    z-index: 2;
+}
+#droppable{
+    width: 336px;
+    height: 336px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid #999; z-index: 1;
+}
+#goodi{
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+#goodie_in{
+    margin-left: calc(50% - 85px);
+}
+
+
+h1,h2{
+    text-align: center;
+}

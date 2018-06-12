@@ -1,0 +1,75 @@
+#questions{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: -300px;
+}
+
+#a1,#a2,#a3,#a4{
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+
+#radiobuttons{
+    border: #2b2b2b;
+}
+
+
+#buttonNext{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 100px;
+    top: 30px;
+    cursor: pointer;
+
+}
+
+#buttonCheck{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: -150px;
+    top: 100px;
+    cursor: pointer;
+}
+
+#flagge{
+    width: 180px;
+    height: 100px;
+}
+
+#progressbar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 550px;
+    height: 107px;
+}
+
+#progress{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+#zug{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    height: 60px;
+    top: -60px;
+    z-index: 2;
+}
+

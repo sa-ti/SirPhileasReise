@@ -1,0 +1,24 @@
+#logoutDiv {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#logout-hase{
+    position: relative;
+    float: right;
+    cursor: pointer;
+    top: 110px;
+    right: 45px;
+}
+
+#logout-sprechblase{
+    position: relative;
+    float: left;
+    height: auto;
+    width: auto;
+    max-width: 350px;
+    max-height: 350px;
+    left: 45px;
+}

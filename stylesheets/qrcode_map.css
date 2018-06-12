@@ -1,0 +1,45 @@
+#map {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 1;
+}
+
+text {
+    position: relative;
+    left: 30px;
+    top: 100px;
+    visibility: hidden;
+}
+
+#qrMap{
+    text-align: center;
+}
+
+#ort_london{
+    visibility: hidden;
+    position: relative;
+    top: -600px;
+    left: 450px;
+    height:220px;
+    width:240px;
+    z-index: 2;
+}
+#ort_wuerzburg{
+    visibility: hidden;
+    position: relative;
+    top: -580px;
+    height:220px;
+    width:240px;
+    z-index: 2;
+}
+#ort_madrid{
+    visibility: hidden;
+    position: relative;
+    top: -600px;
+    left: 200px;
+    height:220px;
+    width:240px;
+    z-index: 2;
+}

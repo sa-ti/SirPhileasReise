@@ -1,0 +1,26 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+
+    padding: 0;
+
+    float: left;
+
+    margin: 10px;
+
+    list-style: none;
+
+    outline: solid;
+
+    width: 150px;
+
+    height: 100px;
+
+    cursor: pointer;
+}
+
+
+

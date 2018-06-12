@@ -1,0 +1,65 @@
+#kasten-breite {
+    width: 200px;
+    position: relative;
+    float: left;
+    top: 100px;
+    left: 130px;
+    display: block;
+    border: none;
+    font-size: larger;
+    color: darkred;
+}
+textarea{
+    text-align: center;
+
+
+}
+
+textarea#name {
+     width: 300px;
+     height: 40px;
+     border: 3px solid transparent;
+     padding: 5px;
+    font-size: 20px;
+
+    background: url('../images/faviconSpiel.png') no-repeat left;
+
+}
+textarea#mail {
+    width: 300px;
+    height: 40px;
+    border: 3px solid transparent;
+    padding: 5px;
+    font-size: 20px;
+
+    background: url("../images/mailIconKopie.png") no-repeat left;
+
+}
+textarea#titel {
+    width: 300px;
+    height: 40px;
+    border: 3px solid transparent;
+    padding: 5px;
+    font-size: 20px;
+
+    background: url("../images/titel.png") no-repeat left;
+
+
+}
+
+#profil-layout {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#profile-bunny {
+    position: relative;
+    float: right;
+
+}
+h3{
+    text-align: center;
+}
+

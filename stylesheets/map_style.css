@@ -1,0 +1,86 @@
+#karte {
+    background-image: url("../images/Weltkarte_normal.png");
+    width: 1200px;
+    height: 597px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#nepal {
+    visibility: hidden;
+    position: relative;
+    top: 208.5px;
+    left: 770.5px;
+}
+
+#aegypt {
+    visibility: hidden;
+    position: relative;
+    top: 181px;
+    left: 577px;
+}
+
+#kanada {
+    visibility: hidden;
+    position: relative;
+    top: -56px;
+    left: 81px;
+}
+
+#daenemark {
+    visibility: hidden;
+    position: relative;
+    top: -125px;
+    left: 518px;
+}
+
+#island {
+    visibility: hidden;
+    position: relative;
+    top: -175px;
+    left: 430px;
+}
+
+#japan {
+    visibility: hidden;
+    position: relative;
+    top: -112px;
+    left: 940px;
+}
+
+#kongo {
+    visibility: hidden;
+    position: relative;
+    top: -10px;
+    left: 531px;
+}
+
+#neuseeland {
+    visibility: hidden;
+    position: relative;
+    top: 73px;
+    left: 1017px;
+}
+
+#peru {
+    visibility: hidden;
+    position: relative;
+    top: -144px;
+    left: 190px;
+}
+
+#russland {
+    visibility: hidden;
+    position: relative;
+    top: -543px;
+    left: 554px;
+}
+
+#china {
+    visibility: hidden;
+    position: relative;
+    top: -599px;
+    left: 740px;
+}

@@ -1,0 +1,175 @@
+#header-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/************ MENU STYLE ************/
+#fixed-menu {
+    background: rgba(200,173,128,0.5);
+    width: 200px;
+    height: 100vh;
+
+    /* out of the flow of the page (also as absolute),
+    but the difference is that it doesn't dissappear if
+    you scroll */
+    position: fixed;
+    left: -1px;
+    top: -1px;
+
+}
+
+#menu-box {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logout-box {
+    text-align: center;
+    position: absolute;
+    top: 97%;
+    transform: translateY(-97%);
+    left: 7.5%;
+}
+
+/*menu buttons*/
+
+.menu-button-size {
+    height: 56px;
+    width: 171px;
+}
+
+/***FOR CHROME***/
+#start_menu {
+    content: url("../images/start_menubutton.png");
+}
+#start_menu:hover, body#start a#start_menu {
+    content: url("../images/start_eingedrueckt.png");
+}
+
+/***/
+
+#tut_menu {
+    content: url("../images/training_menubutton.png");
+}
+#tut_menu:hover, body#tutorial a#tut_menu {
+    content: url("../images/tutorial_eingedrueckt.png");
+}
+
+/***/
+
+#spielmodi_menu {
+    content: url("../images/story_menubutton.png");
+}
+#spielmodi_menu:hover, body#spielmodus a#spielmodi_menu {
+    content: url("../images/story_eingedrueckt.png");
+}
+
+/***/
+
+#qrcode_menu {
+    content: url("../images/qr_menubutton.png");
+}
+#qrcode_menu:hover, body#qrcodemap a#qrcode_menu {
+    content: url("../images/qrcode_eingedrueckt.png");
+}
+
+/***/
+
+#logout_menu {
+    content: url("../images/logout_menubutton.png");
+}
+#logout_menu:hover {
+    content: url("../images/logout_eingedrueckt.png");
+}
+/***FOR CHROME END***/
+/*********************************/
+/***FOR FIREFOX***/
+#start_menu:after {
+    content: url("../images/start_menubutton.png");
+}
+#start_menu:hover:after, body#start a#start_menu:after {
+    content: url("../images/start_eingedrueckt.png");
+}
+
+/***/
+
+#tut_menu:after {
+    content: url("../images/training_menubutton.png");
+}
+#tut_menu:hover:after, body#tutorial a#tut_menu:after {
+    content: url("../images/tutorial_eingedrueckt.png");
+}
+
+/***/
+
+#spielmodi_menu:after {
+    content: url("../images/story_menubutton.png");
+}
+#spielmodi_menu:hover:after, body#spielmodus a#spielmodi_menu:after {
+    content: url("../images/story_eingedrueckt.png");
+}
+
+/***/
+
+#qrcode_menu:after {
+    content: url("../images/qr_menubutton.png");
+}
+#qrcode_menu:hover:after, body#qrcodemap a#qrcode_menu:after {
+    content: url("../images/qrcode_eingedrueckt.png");
+}
+
+#logout_menu:after {
+    content: url("../images/logout_menubutton.png");
+}
+
+#logout_menu:hover:after {
+    content: url("../images/logout_eingedrueckt.png");
+}
+/***FOR FIREFOX END***/
+/**/
+/************ MENU STYLE END ************/
+
+body {
+    background: url("../images/background2.png");
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.button-center {
+    text-align: center;
+    cursor: pointer;
+}
+
+#center-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#button-center {
+    text-align: center;
+    cursor: pointer;
+}
+
+.gearButton {
+    width:171px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}

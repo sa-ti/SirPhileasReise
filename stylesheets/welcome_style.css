@@ -1,0 +1,38 @@
+html {
+	overflow-x: hidden;
+}
+
+#welcome-screen {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#welcome {
+	text-align: center;
+}
+
+#welcome-sprechblase {
+	position: relative;
+	float: left;
+	height: auto;
+	width: 400px;
+	top: -50px;
+}
+#welcome-hase {
+    position: relative;
+	top: 80px;
+	left: -200px;
+}
+
+#buttons {
+	position: relative;
+	float: right;
+	top: -300px;
+	left: -200px;
+	height: 56px;
+	width:171px;
+}
+
+   

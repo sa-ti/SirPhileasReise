@@ -1,0 +1,36 @@
+#tutorial-kasten {
+	width: 900px;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#tutorial-bunny {
+	position: relative;
+	float: right;
+	top: 240px;
+}
+
+#speechbubble {
+	width: 55%;
+	position: relative;
+	float: left;
+	left: 50px;
+	display: block;
+}
+
+#b {
+	position: relative;
+}
+
+#button-size {
+	width: 219px;
+	height: 71px;
+	cursor: pointer;
+	position: relative;
+	top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
