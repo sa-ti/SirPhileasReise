@@ -1,0 +1,90 @@
+Sir Phileas' Reise version 1.0 03/27/2017
+
+GENERAL NOTES
+---------------------
+This game is built using Javascript, HTML5 and Java. The game is to expand knowledge about 
+country facts of the world.
+
+The Game:
+---------------------
+Together with Sir Phileas you are traveling around the world with a train.
+Wrapped in a memory-game you have to answer questions about a country you matched in the game.
+If you answer more than 50% right, you will get this country added in your personal map.
+
+The goal of the game is to learn and to add all countries of the world to your map to reach
+the title of "Weltenbummler".
+
+INSTALLATION
+---------------------
+This project is a play-Project. For starting Sir Phileas' Reise you have to install following
+softwares:
+- IntelliJ IDEA (with sbt plugin)
+- play activator (https://www.playframework.com/)
+- Mozilla Firefox (version: 51.0.1) or Google Chrome (version: 56.0.2924.87)
+
+Getting Started
+---------------------
+Open the project in IntelliJ, click in the sbt console the green play button and enter 'run'.
+After these steps you can open the browser of your choice and write 'localhost:9000' in the adressline.
+
+Built With
+---------------------
+The game is built to follow the MVC (model-view-controller) architectural pattern.
+MVC dictates that there be one true model of the program state, which is represented by a view or (views),
+and that inputs should be taken from outside the program (from the user, the network, other programs, etc) by a controller,
+which applies them to the model, and updates the view accordingly.
+
+The game makes use of Javascript, html5, css, Java and scala.
+
+Controllers used in this game:
+
+- HomeController.java:
+
+  Shows how to handle simple HTTP requests.
+
+- AsyncController.java:
+
+  Shows how to do asynchronous programming when handling a request.
+
+- CountController.java:
+
+  Shows how to inject a component into a controller and use the component when
+  handling requests.
+
+Components used in this game:
+
+- Module.java:
+
+  Shows how to use Guice to bind all the components needed by your application.
+
+- Counter.java:
+
+  An example of a component that contains state, in this case a simple counter.
+
+- ApplicationTimer.java:
+
+  An example of a component that starts when the application starts and stops
+  when the application stops.
+
+Filters
+--------------------
+
+- Filters.java:
+
+  Creates the list of HTTP filters used by your application.
+
+- ExampleFilter.java
+
+  A simple filter that adds a header to every response.
+
+License
+---------------------
+This project is licensed under the Apache 2 license - see the license file for details
+
+Authors
+---------------------
+- Natalia Gette
+- Maja Schank
+- Sarah Tinnes
+- Felix Totzauer
+- Susanne Zednik
