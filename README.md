@@ -10,3 +10,5 @@ Goal of this project was to:
 - See what it is like to work as a team on a bigger software project (using tools like git, slack, etc).
 - Get introduced to various technologies including the Play! Framework, MySQL, JavaFX, HTML/CSS, jQuery and JavaScript.
 - Connect these technologies to a working Web Application with database communication.
+
+Summary video: https://www.youtube.com/watch?v=d9gzSFk8Ebg 
