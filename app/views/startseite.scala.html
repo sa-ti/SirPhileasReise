@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Startseite</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+
+            <!-- startseite style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/startseite_style.css")">
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+
+
+    </head>
+
+    <body id="start">
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+        <h1>Startseite</h1>
+        <div id="start-background">
+            <div>
+
+                <!-- Klickbare Bilder im Zugabteil -->
+                <div><img id="hase" alt="hase" title="hase" src="@routes.Assets.versioned("images/hase.png")" onclick="location.href='profile'" onmouseover="src = '@routes.Assets.versioned("images/hase_shiny.png")'" onmouseout="src = '@routes.Assets.versioned("images/hase.png")'"></div>
+                <div><img id="karte" alt="karte" title="karte" src="@routes.Assets.versioned("images/map_small.png")" onclick="location.href='map'" onmouseover="src = '@routes.Assets.versioned("images/map_small_shiny.png")'"onmouseout="src = '@routes.Assets.versioned("images/map_small.png")'" ></div>
+                <div><img id = "buch" alt="buch" title="buch" src="@routes.Assets.versioned("images/buch.png")" onclick = "location.href='logbook'" onmouseover="src = '@routes.Assets.versioned("images/buch_shiny.png")'" onmouseout="src = '@routes.Assets.versioned("images/buch.png")'"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

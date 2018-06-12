@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Tutorial</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+
+            <!-- anleitung style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/tutorial_style.css")">
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+
+    </head>
+
+    <body id="tutorial">
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+
+        <h1> Willkommen im Tutorial!</h1>
+
+            <!-- Hase und Sprechblase -->
+        <div id="tutorial-kasten">
+            <img id="tutorial-bunny" src="@routes.Assets.versioned("images/hase.png")">
+            <img id = "speechbubble" src = "@routes.Assets.versioned("images/tutorial_speechBubble.png")">
+        </div>
+
+            <!-- Button -->
+        <div id="button-size">
+                <img id="b" src="@routes.Assets.versioned("images/b-training.png")" onclick="location.href='training'">
+        </div>
+    </body>
+
+</html>

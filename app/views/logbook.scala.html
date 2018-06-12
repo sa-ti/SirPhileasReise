@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Sir Phileas' Reise | Logbuch</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+            <!-- mains tyle-->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/logbook_style.css")">
+            <!-- javascripts -->
+        <script src="@routes.Assets.versioned("javascripts/logbook_script.js")" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type= "text/javascript" src="http://www.turnjs.com/lib/turn.min.js"></script>
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+    </head>
+
+    <body>
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+        <h1>Logbuch</h1>
+
+        <div id="centeredLogbook">
+
+        <!-------------------Flipbook with Turn.js---------------------------------------->
+        <div class = "flipWrapper">
+
+        <!--Each Div represents one page of the Logbook, that's one page of Pictures and one page of Text
+            for each Country. The first two Divs are the bookcover, aswell as the last-->
+        <div id="flipbook">
+            <div class="hard"></div>
+            <div class="hard"></div>
+            <div class="text"> <br> Dies ist dein persönliches Logbuch! <br>
+            Hier findest du <br> die wichtigsten Informationen <br> zu den sammelbaren Ländern. <br>
+            Viel Spaß beim Entdecken!</div>
+
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge3.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/RusslandOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Russland
+                <li>Hauptstadt: Moskau</li>
+                <li>Sprache: Russisch</li>
+                <li>Währung: Rubel</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge5.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/NeuseelandOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Neuseeland
+                <li>Hauptstadt: Wellington</li>
+                <li>Sprache: Englisch</li>
+                <li>Währung: Neuseeländischer Dollar</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge1.png")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/NepalOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Nepal
+                <li>Hauptstadt: Kathmandu</li>
+                <li>Sprache: Nepali</li>
+                <li>Währung: Rupie</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge2.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/JapanOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Japan
+                <li>Hauptstadt: Tokio</li>
+                <li>Sprache: Japanisch</li>
+                <li>Währung: Yen</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge4.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/IslandOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Island
+                <li>Hauptstadt: Reykjavik</li>
+                <li>Sprache: Isländisch</li>
+                <li>Währung: Kronen</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge6.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/DaenemarkOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Dänemark
+                <li>Hauptstadt: Kopenhagen</li>
+                <li>Sprache: Dänisch</li>
+                <li>Währung: Kronen</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge7.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/KongoOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Dem. Rep. Kongo
+                <li>Hauptstadt: Kinshasa</li>
+                <li>Sprache: Französisch</li>
+                <li>Währung: Franc</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge8.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/AegyptenOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Ägypten
+                <li>Hauptstadt: Kairo</li>
+                <li>Sprache: Arabisch</li>
+                <li>Währung: Pfund</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge9.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/KanadaOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Kanada
+                <li>Hauptstadt: Ottawa</li>
+                <li>Sprache: Englisch / Französisch</li>
+                <li>Währung: Dollar</li>
+                </ul>
+            </div>
+            <div class="bilder">
+                <img class="displayed" src="@routes.Assets.versioned("images/Flagge10.jpg")" height="100px" width="200px" border="1px">
+                <img class="displayed" src="@routes.Assets.versioned("images/PeruOutline.png")" height="100px" width="200px">
+            </div>
+            <div class="text">
+                <ul> Peru
+                <li>Hauptstadt: Lima</li>
+                <li>Sprache: Spanisch</li>
+                <li>Währung: Sol</li>
+                </ul>
+            </div>
+            <div class="hard"></div>
+        </div>
+        </div>
+
+                <!-- blättert die entsprechenden Seiten um -->
+        <script>
+            $(window).ready(function(){$("#flipbook").turn({
+                width: 800,
+                height: 400,
+                autoCenter: true,
+            });});
+
+            $(window).bind('keydown', function(e){
+                if (e.keyCode==37)
+                    $('#flipbook').turn('previous');
+                else if (e.keyCode==39)
+                    $('#flipbook').turn('next');
+            });
+        </script>
+
+        </div>
+
+    </body>
+
+</html>

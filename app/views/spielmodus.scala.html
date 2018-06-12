@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Storymodus</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+
+            <!-- storymodus style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/spielmodus_style.css")">
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+
+
+
+    </head>
+
+    <body id="spielmodus">
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+        <h1>Storymodus</h1>
+        <!-- Button zur Levelauswahl -->
+        <div id="background">
+            <div class="gearButton">
+                <div class ="tooltip">
+                    <img src="@routes.Assets.versioned("images/b-level1.png")" onclick="location.href='level1'">
+                    <span class="tooltiptext">32 Versuche</span>
+                </div>
+                <br>
+                <div class="tooltip">
+                    <img src="@routes.Assets.versioned("images/b-level2.png")" onclick="location.href='level2'">
+                    <span class="tooltiptext">20 Versuche</span>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

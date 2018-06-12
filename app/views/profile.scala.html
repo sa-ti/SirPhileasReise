@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Profil</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+
+            <!-- profil style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/profil_style.css")">
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+            <!-- startseite script -->
+        <script src="@routes.Assets.versioned("javascripts/profil_script.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")" type="text/javascript"></script>
+
+
+    </head>
+
+
+    <body>
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+        <h1>Profil</h1>
+        <h3> Hier kannst du deine Daten einsehen </h3>
+            <!-- Anzeige der Daten aus DB -->
+        <div id="profil-layout">
+
+            <div id="kasten-breite">
+
+                    Benutzername:<br>
+                        <textarea id="name" readonly>
+                        </textarea>
+                    E-Mail:<br>
+                        <textarea id="mail" readonly>
+                        </textarea>
+                    Titel:<br>
+                        <textarea id="titel" readonly >
+                        </textarea>
+
+                <!-- <button type="button" onclick="saveAttributes()">Änderungen speichern</button> -->
+
+            </div>
+
+            <img id="profile-bunny" src="@routes.Assets.versioned("images/hase.png")">
+
+        </div>
+        <script>
+        $(document).ready(function() {
+            actualUser();
+        })
+    </script>
+
+
+    </body>
+
+
+</html>

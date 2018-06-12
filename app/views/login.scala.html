@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Anmelden</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main css -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+            <!-- login css -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/login_style.css")">
+
+            <!-- login script -->
+        <script src="@routes.Assets.versioned("javascripts/login_script.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")" type="text/javascript"></script>
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+    </head>
+
+    <body>
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+            <!-- main menu -->
+            <!-- not needed on login page -->
+
+        <section>
+            <form id="login_id" name="login" onkeypress = "checkSubmit(event)" method="post">
+
+                <h1>Anmelden</h1>
+                    <!-- loginform -->
+                <div>
+
+                    <label><b>Benutzername*</b></label>
+                    <input id="username_id" type="text" placeholder="Benutzername" name="username" required autofocus>
+
+                    <label><b>Passwort*</b></label>
+                    <input id= "password_id" type="password" placeholder="Passwort" name="password" required>
+
+                    <button type="button" value="Login" id = "submit" onclick="checkLogin()" >Login</button>
+                    <input title="checkbox" type="checkbox" checked="checked"> Angemeldet bleiben
+
+                    <br>
+                    <p>*Pflichtfelder</p>
+
+                    <button type="button" class="cancelbtn" onclick="location.href = 'welcome'">Abbrechen</button>
+                    <button type = "button" class ="cancelbtn2"  onclick = "location.href = 'register'">Neuen Account anlegen</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

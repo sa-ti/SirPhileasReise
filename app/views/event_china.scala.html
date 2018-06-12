@@ -1,0 +1,59 @@
+<!-- ******************************** EVENT SEITE MIT DRAG & DROP *********************************************-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Event </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+            <!-- storymodus style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/qrcode_map.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/event_style.css")">
+            <!-- scripts -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/event_qr.js")"type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/map_script.js")"type="text/javascript"></script>
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+    </head>
+
+    <body>
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                    <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                    <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                    <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                    <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                    <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+        <h1>Welches Land ist das richtige? </h1>
+        <h2>Ziehe es in den Bilderrahmen, um es in deine Weltkarte einzufügen!</h2>
+
+       <!--  <div id="content" style="height: 400px;"> -->
+
+            <div id="draggableright"> <img src="@routes.Assets.versioned("images/china.png")"></div> <br>
+            <div class="false">
+            <div id="draggablefalse"> <img src="@routes.Assets.versioned("images/argentinien.png")"></div>
+            </div>
+            <div id="draggablefalse2"> <img src="@routes.Assets.versioned("images/frankreich.png")"></div>
+
+            <div id="droppable"><img src="@routes.Assets.versioned("images/rahmenevent.png")"> </div>
+
+       <!--  <div  id= "goodi">
+            <input id="goodie_in" type="image" src="@routes.Assets.versioned("images/qr_goodies.png") --> <!-- " border="0" alt="goodies" onclick="goodies()"/>
+        </div> -->
+    </body>
+</html>

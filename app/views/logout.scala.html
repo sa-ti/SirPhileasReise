@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Sir Phileas' Reise | Abmelden</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main css -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+            <!-- logout css -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/logout_style.css")">
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+    </head>
+
+    <body>
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+            <!-- main menu -->
+            <!-- not needed on login page -->
+
+        <h1>Auf Wiedersehen!</h1>
+        <div id = "logoutDiv">
+
+            <!-- Klick auf Phileas = Zurück zum Login -->
+                <img id="logout-hase" alt="logout-hase" title="logout-hase" src="@routes.Assets.versioned("images/hase.png")" onclick="location.href='login'" onmouseover="src = '@routes.Assets.versioned("images/hase_shiny.png")'" onmouseout="src = '@routes.Assets.versioned("images/hase.png")'" >
+                <img id="logout-sprechblase" src="@routes.Assets.versioned("images/logout-speechbubble.png")">
+        </div>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | QR Codes</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+
+            <!-- storymodus style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/qrcode_map.css")">
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+            <!-- javascripts-->
+        <script src="@routes.Assets.versioned("javascripts/qrcodemap.js")"></script>
+
+        <script src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")" type="text/javascript"></script>
+
+
+    </head>
+
+    <body id="qrcodemap">
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+        <h1>Europa</h1>
+
+            <!-- QRCodeMap mit areas mit mouseoverevents -->
+        <div id="qrMap" >
+
+            <img id="image" src="@routes.Assets.versioned("images/Map_rot3.png")" usemap="#Map">
+
+            <map id="Map" name="Map">
+               <area id="london" shape="poly" coords="348,248,360,240,370,244,375,253,374,266,365,276,364,289,349,269" style="cursor:pointer" onmouseover=displayLondon() onmouseout=displayDefault()>
+                <area id="madrid" shape="poly" coords="287,521,307,523,311,535,302,550,295,570,291,560,284,554,280,535" style="cursor:pointer" onmouseover=displayMadrid() onmouseout=displayDefault()>
+                <area id="wuerzburg" shape="poly" coords="539,292,558,292,562,304,564,313,555,325,551,344,539,328,531,310" style="cursor:pointer" onmouseover=displayWuerzburg() onmouseout=displayDefault()>
+            </map>
+
+
+        </div>
+        <div class="gearButton">
+            <a href="qrcodescanner"> <img src="@routes.Assets.versioned("images/b-qrcode.png")"></a>
+        </div>
+            <!-- Onmouseover images: -->
+            <img id="ort_london" src="@routes.Assets.versioned("images/london.png")" >
+
+            <img id="ort_madrid" src="@routes.Assets.versioned("images/madrid.png")" >
+
+            <img id="ort_wuerzburg" src="@routes.Assets.versioned("images/wuerzburg.png")">
+
+
+
+            <!-- lädt zu beginn entsprechende QRMap-->
+        <script>
+                $(document).ready(function() {
+                    loadQRCode();
+                })
+        </script>
+    </body>
+</html>

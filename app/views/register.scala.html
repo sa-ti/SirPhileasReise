@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Registrieren</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+            <!--register style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/register_style.css")">
+
+
+            <!-- register script -->
+        <script src="@routes.Assets.versioned("javascripts/login_script.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")" type="text/javascript"></script>
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+    </head>
+
+        <!-- header image -->
+    <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+        <!-- main menu -->
+        <!-- not needed on login page -->
+
+        <body >
+            <section>
+                    <!-- RegisterForm -->
+                <form id = "login_id" name="login_id"  method="post" onkeypress = "checkRegister(event)">
+
+                    <h1>Neuen Account erstellen</h1>
+
+                    <div class="register">
+
+                        <label><b>Benutzername*</b></label>
+                        <div data-tip="Dein Benutzername muss aus min. 3 Zeichen bestehen">
+                            <input  type="text" id="username_id" placeholder="Benutzername" pattern="[a-zA-Z0-9_-]{3,15}" name="username_id" required autofocus/>
+                        </div>
+
+                        <label><b>Passwort*</b></label>
+                        <div data-tip="Passwort muss min. 6 Zeichen lang sein, einen Großbuchstaben & eine Zahl beinhalten">
+                            <input  type="password" id="password_id" placeholder="Passwort" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="password_id" required />
+                        </div>
+
+                        <label><b>E-Mail*</b></label><br>
+                        <div data-tip="E-Mail muss den allgemeinen Standards entsprechen">
+                            <input type="email" id="email_id" placeholder="E-Mail" name="email_id" required >
+                        </div>
+
+                        <button type="button" type="submit" value="Login" id = "submit" onclick="checkLoginAfterRegister()" >Registrieren</button>
+                        <br>
+                        <input title="checkbox" type="checkbox" checked="checked"> Angemeldet bleiben
+
+                        <br>
+                        <p>*Pflichtfelder</p>
+
+                        <button type="button" class="cancelbtn" onclick="location.href = 'login'">Abbrechen</button>
+
+                    </div>
+                </form>
+            </section>
+
+    </body>
+
+</html>

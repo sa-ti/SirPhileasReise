@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Sir Phileas' Reise | QR-Code einscannen</title>
+		<meta charset="utf-8"/>
+			<!--Stylesheets -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/qrcode_styles.css")">
+		<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+		<link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+			<!-- Javascripts-->
+		<script type="text/javascript" src="@routes.Assets.versioned("javascripts/qcode-decoder.min.js")"></script>
+		<script type="text/javascript" src="@routes.Assets.versioned("javascripts/qrcodemap.js")"></script>
+	</head>
+
+	<body>
+			<!-- header image -->
+		<img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+			<!-- fixed positioning menu -->
+		<div id="fixed-menu">
+				<!-- main menu -->
+			<div id="menu-box">
+				<a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+				<a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+				<a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+				<a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+			</div>
+			<div id="logout-box">
+				<a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+			</div>
+		</div>
+
+		<h1>QR-Code einscannen</h1>
+
+		<div class="centeredContent">
+
+			<video autoplay></video>
+
+		</div>
+			<!-- Zurück Button-->
+        <div class="gearButton">
+			<a> <img src="@routes.Assets.versioned("images/b-zurueckKarte.png")" onclick="location.href = 'qrcode' ; return false" style= "cursor:pointer"></a>
+
+        </div>
+
+		<script>
+
+				// get video element
+
+				var video = document.querySelector('video');
+
+				// register callback function if a QR code is detected
+
+				var qr = new QCodeDecoder();
+
+				qr.decodeFromCamera(video, function(err, result){
+
+					//if(err) throw err;
+					<!-- Prüft ob Qrcode "China" enthält und ruft entsprechended event auf-->
+					if(result == "China"){
+						document.location.href="event_china";
+					}
+
+				});
+
+        </script>
+
+    </body>
+
+</html>

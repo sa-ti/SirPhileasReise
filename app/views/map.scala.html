@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sir Phileas' Reise | Weltkarte</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+            <!-- main style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main_style.css")">
+
+            <!-- map style -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/map_style.css")">
+
+            <!-- map script -->
+        <script src="@routes.Assets.versioned("javascripts/map_script.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")" type="text/javascript"></script>
+        <link rel="shortcut icon"  href="@routes.Assets.versioned("images/favicon16.png") ">
+
+    </head>
+
+    <body>
+
+            <!-- header image -->
+        <img id="header-image" src="@routes.Assets.versioned("images/header.png")">
+
+            <!-- fixed positioning menu -->
+        <div id="fixed-menu">
+                <!-- main menu -->
+            <div id="menu-box">
+                <a class="menu-button-size" id="start_menu" href="startseite" alt="Start" title="Start"></a>
+                <a class="menu-button-size" id="tut_menu" href="tutorial" alt="Tutorial" title="Tutorial"></a>
+                <a class="menu-button-size" id="spielmodi_menu" href="spielmodus" alt="Story" title="Story"></a>
+                <a class="menu-button-size" id="qrcode_menu" href="qrcode" alt="QR-Code" title="QR-Code"></a>
+            </div>
+            <div id="logout-box">
+                <a class="menu-button-size" id="logout_menu" href="logout" alt="Logout" title="Logout"></a>
+            </div>
+        </div>
+
+        <h1>Weltkarte</h1>
+            <!-- alle möglichen Landumrisse der Länder aus der DB -->
+        <div id="karte">
+            <div>
+                <div><img id ="nepal" alt="nepal" title="Nepal" src="@routes.Assets.versioned("images/karte_nepal.png")"></div>
+                <div><img id ="aegypt" alt="aegypt" title="Ägypten" src="@routes.Assets.versioned("images/karte_aegypt.png")"></div>
+                <div><img id ="kanada" alt="kanada" title="Kanada" src="@routes.Assets.versioned("images/karte_canada.png")"></div>
+                <div><img id ="daenemark" alt="daenemark" title="Dänemark" src="@routes.Assets.versioned("images/karte_denmark.png")"></div>
+                <div><img id ="island" alt="island" title="Island" src="@routes.Assets.versioned("images/karte_island.png")"></div>
+                <div><img id ="japan" alt="japan" title="Japan" src="@routes.Assets.versioned("images/karte_japan.png")"></div>
+                <div><img id ="kongo" alt="kongo" title="Kongo" src="@routes.Assets.versioned("images/karte_kongo.png")"></div>
+                <div><img id ="neuseeland" alt="Neuseeland" title="neuseeland" src="@routes.Assets.versioned("images/karte_newZealand.png")"></div>
+                <div><img id ="peru" alt="peru" title="Peru" src="@routes.Assets.versioned("images/karte_peru.png")"></div>
+                <div><img id ="russland" alt="russland" title="Russland" src="@routes.Assets.versioned("images/karte_russia.png")"></div>
+                <div><img id="china" alt="china" title="China" src="@routes.Assets.versioned("images/karte_china.png")"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+                $(document).ready(function() {
+                    setMap();
+                })
+        </script>
+
+    </body>
+
+</html>
